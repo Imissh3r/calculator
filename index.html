@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <div id="main-display">
+                <div id="expression"></div>
+                <div id="display">0</div>
+            </div>
+            <div id="buttons">
+                <button class="btn" data-action="clear">AC</button>
+                <button class="btn" data-action="backspace">C</button>
+                <button class="btn" data-operator="/">/</button>
+                <button class="btn" data-operator="*">×</button>
+
+                <button class="btn" data-number="7">7</button>
+                <button class="btn" data-number="8">8</button>
+                <button class="btn" data-number="9">9</button>
+                <button class="btn" data-operator="-">−</button>
+
+                <button class="btn" data-number="4">4</button>
+                <button class="btn" data-number="5">5</button>
+                <button class="btn" data-number="6">6</button>
+                <button class="btn" data-operator="+">+</button>
+
+                <button class="btn" data-number="1">1</button>
+                <button class="btn" data-number="2">2</button>
+                <button class="btn" data-number="3">3</button>
+                <button class="btn" data-operator="%">%</button>
+
+                <button class="btn" data-action="negate" aria-label="Toggle Negative">±</button>
+                <button class="btn zero" data-number="0">0</button>
+                <button class="btn" data-number=".">.</button>
+                <button class="btn equal" data-action="equal">=</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>"Built for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a> — © 2025 <a
+            href="https://github.com/Imissh3r" target="_blank">Sree</a>"</footer>
+</body>
+
+</html>
